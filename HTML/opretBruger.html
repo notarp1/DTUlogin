@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opret Bruger</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <script type="text/javascript" src="../JavaScript/jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="../JavaScript/javaScript.js"></script>
+
+</head>
+<body>
+
+<h1>Opret Bruger</h1>
+
+<p> Udfyld venligst nedstående formular for at oprette bruger</p>
+
+    <form action="brugerAdmin.html" method="post">
+
+        <label for="userID">Bruger ID:</label>
+        <input type="number" id="userID" name="userID"><br><br>
+
+        <label for="username">Brugernavn:</label>
+        <input type="text" id="username" name="username"> <br><br>
+
+        <label for="fname">Fornavn:</label>
+        <input type ="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Efternavn:</label>
+        <input type="text" id="lname" name="lame"> <br><br>
+
+        <label>Rolle</label>
+        <input type="radio" id="admin" value="admin" name="rolle">
+        <label for="admin" style="color: black">Admin</label>
+
+        <input type="radio" id="bruger" value="bruger " name="rolle">
+        <label for="bruger" style="color: black">Bruger</label> <br>
+
+
+        <label>Aktiv?</label>
+        <input type="radio" id="active" value="1" name="aktiv">
+        <label for="active" style="color: black">Ja</label>
+
+        <input type="radio" id="inactive" value="0" name="aktiv">
+        <label for="inactive" style="color: black">Nej</label> <br><br>
+
+        <input type="submit" value="Opret Bruger">
+    </form>
+
+
+</body>
+</html>
